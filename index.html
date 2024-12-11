@@ -14,13 +14,15 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/mobile.css">
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger text-center d-flex flex-column align-items-center" href="#page-top">
                 <!-- <img src="assets/img/ws3.png" alt="WS Logo" style="width: 60px; height: 60px; margin-bottom: 10px;"> -->
-                <span class="d-block d-lg-none" style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase;">Wasimuddin Fathimullah</span>
+                <span class="d-block d-lg-none" style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase;">Wasim Fathimullah</span>
                 <span class="d-none d-lg-block" style="font-size: 1.8rem; font-weight: bold; text-transform: uppercase; color: white;">Portfolio</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +83,12 @@
         <div class="container-fluid p-0">
 
             <!-- Intro Section -->
-            <section class="resume-sectionintro" id="name" style="background-image: url('assets/img/BGM21.jpg'); background-size: cover; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.5);">
+            <section class="resume-sectionintro" id="name">
+                <div class="background-container">
+                    <img class="background-desktop" src="assets/img/BGM21.jpg" alt="Background Desktop Image">
+                    <img class="background-mobile" src="assets/img/BGMm.jpg" alt="Background Mobile Image">
+                    <div class="overlay"></div> <!-- Overlay for dimming effect -->
+                </div>
                 <div class="resume-sectionintro-content text-center text-white">
                     <h1 class="mb-0">
                         <span style="color: white;">Wasimuddin Salar</span>
@@ -94,7 +101,6 @@
             <hr class="m-0" />
 
 
-
             <!-- About Me Section -->
             <section class="resume-section" id="about" style="display: flex; align-items: stretch; margin: 0; padding: 0; width: 100%; height: auto;">
                 <!-- Image Section -->
@@ -103,23 +109,22 @@
                 </div>
 
                 <!-- Content Section -->
-            <div style="flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; background-color: rgba(255, 255, 255, 0.9);">
-                <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">Wasimuddin Salar, Fathimullah</h2>
-                <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">Computer Science Grad | AI/ML & Data Science enthusiast | Built Federated Learning IDS for Autonomous Vehicles | Former System Engineer @ TCS</p>
-                <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>Address:</strong> 900 E Park St, Carbondale, IL 62901</p>
-                <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>DOB:</strong> February 23, 2000</p>
-                <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>Phone:</strong> +1 (618) 434-5330</p>
-                <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:wasimsalar.f.m@gmail.com">wasimsalar.f.m@gmail.com</a></p>
-                <div class="social-icons" style="margin-top: 20px;">
-                    <a class="social-icon" href="mailto:wasimsalar.f.m@gmail.com" style="margin-right: 15px;"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="social-icon" href="https://www.linkedin.com/in/wasimuddinsalar/" style="margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/WasimSalar" style="margin-right: 15px;"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://www.instagram.com/wasim.salar/"><i class="fab fa-instagram"></i></a>
+                <div style="flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; background-color: rgba(255, 255, 255, 0.9);">
+                    <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">Wasimuddin Salar, Fathimullah</h2>
+                    <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">Computer Science Grad | AI/ML & Data Science enthusiast | Built Federated Learning IDS for Autonomous Vehicles | Former System Engineer @ TCS</p>
+                    <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>Address:</strong> 900 E Park St, Carbondale, IL 62901</p>
+                    <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>DOB:</strong> February 23, 2000</p>
+                    <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>Phone:</strong> +1 (618) 434-5330</p>
+                    <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:wasimsalar.f.m@gmail.com">wasimsalar.f.m@gmail.com</a></p>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a class="social-icon" href="mailto:wasimsalar.f.m@gmail.com" style="margin-right: 15px;"><i class="fa-solid fa-envelope"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/wasimuddinsalar/" style="margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/WasimSalar" style="margin-right: 15px;"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/wasim.salar/"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-            </div>
 
-        </section>
-        
+            </section>
         
 
             <!-- Education-->
@@ -231,47 +236,6 @@
             </section>
             <hr class="m-0" />
             
-            <!-- Skills-->
-         <!--   <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" /> -->
 
             <!-- Skills Section -->
             <section class="resume-section" id="skills">
@@ -535,43 +499,6 @@
                 </div>
             </section>
   
-           <!-- Certifications
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            Pega Certified System Architect
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            Pega Certified Senior System Architect
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle text-warning"></i></span>
-                            Google Data Analytics - Coursera
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle text-warning"></i></span>
-                            Machine Learning - Coursera
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle text-warning"></i></span>
-                            Introduction to TensorFlow - DataCamp
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle text-warning"></i></span>
-                            Deep Learning - DataCamp
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Best Coordinator Award - PULSE Student Body
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        -->
 
             <!-- Certifications Section -->
             <section class="resume-section" id="certifications">
@@ -801,5 +728,45 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            // Function to handle scroll animations (fade-in and slide-in transitions)
+            const revealSections = () => {
+                const sections = document.querySelectorAll('.resume-section');
+                const windowHeight = window.innerHeight;
+
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+
+                    if (sectionTop - windowHeight <= 0) {
+                        section.classList.add('visible'); // Apply the transition class
+                    } else {
+                        section.classList.remove('visible'); // Remove the transition class if section is out of view
+                    }
+                });
+            };
+
+            // Handle menu navigation
+            document.querySelectorAll('.js-scroll-trigger').forEach(navItem => {
+                navItem.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    const targetSection = document.querySelector(navItem.getAttribute('href'));
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 50, // Adjust the offset if needed
+                        behavior: 'smooth'
+                    });
+
+                    revealSections(); // Apply the transition when scrolling to section
+                });
+            });
+
+            // Add scroll event listener to continuously check sections
+            window.addEventListener('scroll', revealSections);
+
+            // Initial call to reveal sections already visible
+            revealSections();
+        </script> 
+
     </body>
 </html>
