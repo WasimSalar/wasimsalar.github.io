@@ -1,0 +1,274 @@
+/* General Mobile Styles */
+@media screen and (max-width: 767px) {
+
+    /* Section Styling for Mobile */
+    section.resume-section {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    section.resume-section .resume-section-content {
+        text-align: left; /* Keep text left-aligned */
+    }
+
+    /* Certification Cards - One per Row */
+    .resume-section .row > [class*="col-"] {
+        flex: 0 0 100%; /* Make each column span full width */
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 1rem; /* Add spacing between cards */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow for mobile */
+    }
+
+    .card img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+
+    .card-body {
+        padding: 1rem; /* Adjust padding for card body */
+        text-align: left; /* Ensure text in cards is left-aligned */
+    }
+
+    /* Text Adjustments */
+    h2, h5 {
+        font-size: 1.5rem; /* Smaller font sizes for headings */
+        text-align: left; /* Keep headings left-aligned */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        text-align: left; /* Keep paragraphs left-aligned */
+    }
+
+    /* Navigation Bar */
+    nav {
+        padding: 0.5rem; /* Adjust navbar padding */
+        font-size: 0.9rem; /* Smaller font for navigation links */
+    }
+
+    /* Buttons */
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Tablet (Optional Fine-Tuning) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .resume-section .row > [class*="col-"] {
+        flex: 0 0 50%; /* Two blocks per row on tablet */
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    /* About Me Section */
+    #about {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 20px; /* Add some spacing */
+    }
+
+    #about > div {
+        width: 100%; /* Make both image and text sections take full width */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    #about img {
+        width: 80%; /* Reduce image width */
+        max-width: 300px; /* Limit maximum size */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+
+    #about h2 {
+        font-size: 2rem; /* Adjust heading font size */
+        text-align: center; /* Center-align the heading */
+    }
+
+    #about p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        text-align: left; /* Keep text left-aligned */
+    }
+
+    #about .social-icons {
+        display: flex;
+        justify-content: center; /* Center-align social icons */
+        margin-top: 20px;
+    }
+
+    #about .social-icon {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+}
+
+
+/* Skills Section - Mobile View */
+@media (max-width: 768px) {
+    #skills .row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+      gap: 10px; /* Adjust the spacing between items */
+    }
+  
+    #skills .skill-card {
+      text-align: center; /* Ensure the text is center aligned */
+      padding: 10px; /* Add some padding for better spacing */
+      border: 1px solid #ddd; /* Optional: Add a light border */
+      border-radius: 8px; /* Optional: Round the corners */
+      background-color: #f9f9f9; /* Optional: Background color */
+    }
+  
+    #skills .skill-card .card-header i,
+    #skills .skill-card .card-header span {
+      margin-bottom: 10px; /* Space between icon and title */
+    }
+  
+    #skills .skill-card h5 {
+      font-size: 1rem; /* Adjust font size for mobile */
+      margin-top: 5px;
+      text-align: center;
+    }
+  
+    /* Adjusting the icons for smaller screens */
+    #skills .skill-card .card-header i,
+    #skills .skill-card .card-header span {
+      font-size: 2.5rem; /* Slightly smaller icons */
+    }
+  }
+  
+/* Intro Section - Desktop View */
+.resume-sectionintro {
+    position: relative; /* Add position relative for images to overlay correctly */
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color for desktop */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: row; /* Stack items horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0; /* Remove extra padding */
+    text-align: center; /* Center all text */
+    height: 100vh; /* Full viewport height for mobile */
+}
+
+
+
+.resume-sectionintro .background-desktop {
+    position: absolute; /* Ensure the image sits behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensure image covers properly */
+    display: block; /* Always visible on desktop */
+    background-blend-mode: overlay; /* Apply overlay effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+}
+
+.resume-sectionintro .background-mobile {
+    position: absolute; /* Ensure the image sits behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensure image covers properly */
+    display: none; /* Initially hidden, shown via CSS media queries */
+}
+
+/* Centering text */
+.resume-sectionintro-content {
+    position: relative; /* Ensure the content sits above the images */
+    z-index: 2; /* Ensure content is above the background image */
+    color: white; /* Ensure text contrasts well against the background */
+    max-width: 100%; /* Allow full width to prevent line breaks */
+    padding: 20px; /* Add some padding for better spacing */
+    text-align: center; /* Keep the text centered */
+}
+
+/* Mobile-specific background image and styling */
+@media (max-width: 767px) {
+    .resume-sectionintro .background-mobile {
+        display: block; /* Show mobile background image */
+    }
+
+    .resume-sectionintro .background-desktop {
+        display: none; /* Hide desktop background image on mobile */
+    }
+
+    .resume-sectionintro-content {
+        color: white; /* Ensure text contrasts well against the background */
+        max-width: 600px; /* Restrict content width for readability */
+        padding: 20px; /* Add some padding for better spacing */
+    }
+
+    .resume-sectionintro-content h1 {
+        font-size: 2.5rem; /* Keep name size readable */
+        line-height: 1.5; /* Better spacing between lines */
+        margin-bottom: 15px; /* Add space below the name */
+    }
+
+    .resume-sectionintro-content span.text-primary {
+        color: #007bff; /* Highlight the second part of the name */
+    }
+
+    .resume-sectionintro-content p {
+        font-size: 1rem; /* Adjust tagline size for mobile */
+        margin-bottom: 10px; /* Add space below tagline */
+        line-height: 1.5; /* Improve line spacing */
+        text-align: center; /* Center align the tagline */
+    }
+}
+
+
+.resume-sectionintro {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-desktop, .background-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for dimming */
+    z-index: 2;
+}
+
+.resume-sectionintro-content {
+    position: relative;
+    z-index: 3; /* Ensure the content is above the background and overlay */
+    text-align: center;
+    color: white;
+    padding: 0 20px; /* Add padding for better spacing */
+}
