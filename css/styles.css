@@ -93,6 +93,7 @@
 }
 
 body {
+  opacity: 1;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -10972,12 +10973,7 @@ section.resume-section .resume-section-content {
   }
 }
 
-@media (max-width: 767px) {
-  .resume-section .col-md-4 {
-    width: 100%;
-    margin-bottom: 20px; /* Adjust margin for mobile */
-  }
-}
+
 
 section.resume-sectionintro {
   display: flex;
@@ -11013,6 +11009,25 @@ section.resume-sectionintro {
     padding-right: 3rem;
   }
 }
+
+@media (max-width: 768px) {
+  .d-flex.flex-column {
+      flex-direction: column-reverse; /* Reverse the flex direction for mobile view */
+  }
+}
+
+
+.resume-section {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.resume-section.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 
 /* General icon scaling */
