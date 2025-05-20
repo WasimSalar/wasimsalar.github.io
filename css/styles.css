@@ -10896,10 +10896,12 @@ p.lead {
     height: 100vh;
   }
   #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 1rem 1rem; /* Push it to the left with some bottom spacing */
+  padding: 0.5rem 0;
+}
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
