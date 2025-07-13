@@ -11179,3 +11179,31 @@ section.resume-sectionintro {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+
+.resume-corner-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 123, 255, 0.9); /* subtle blue */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.resume-corner-link:hover {
+    background-color: rgba(0, 86, 179, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .resume-corner-link {
+        display: none;
+    }
+}
