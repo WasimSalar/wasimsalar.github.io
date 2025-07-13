@@ -11181,29 +11181,32 @@ section.resume-sectionintro {
 }
 
 
+.resume-sectionintro {
+  position: relative; /* This anchors the absolute button inside */
+}
+
 .resume-corner-link {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 123, 255, 0.9); /* subtle blue */
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-corner-link i {
+  margin-right: 6px;
 }
 
 .resume-corner-link:hover {
-    background-color: rgba(0, 86, 179, 0.9);
-    text-decoration: none;
-    color: white;
-}
-
-
-@media (max-width: 768px) {
-    .resume-corner-link {
-        display: none;
-    }
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  color: #fff;
 }
