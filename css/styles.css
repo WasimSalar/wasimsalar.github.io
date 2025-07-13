@@ -11189,7 +11189,7 @@ section.resume-sectionintro {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.9);
   color: #fff;
   padding: 8px 14px;
   border-radius: 6px;
@@ -11197,8 +11197,9 @@ section.resume-sectionintro {
   font-weight: 500;
   font-size: 14px;
   z-index: 10;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .resume-corner-link i {
@@ -11206,7 +11207,15 @@ section.resume-sectionintro {
 }
 
 .resume-corner-link:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 86, 179, 0.9);
   transform: translateY(-2px);
   color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* Hide on mobile devices (less than 768px wide) */
+@media (max-width: 767.98px) {
+  .resume-corner-link {
+    display: none;
+  }
 }
