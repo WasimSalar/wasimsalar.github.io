@@ -10927,11 +10927,11 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
   background-color: #495057;
   color: #fff;
-  border-radius: 100%;
+  border-radius: 50%;             /* Circle */
+  aspect-ratio: 1 / 1;            /* Maintain square shape */
+  width: 3.5rem;                  /* Desktop width */
   font-size: 1.5rem;
   margin-right: 1.5rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
